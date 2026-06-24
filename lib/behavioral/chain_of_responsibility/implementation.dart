@@ -74,13 +74,13 @@ class _ScreenState extends State<Screen> {
 
     switch (status) {
       case "running":
-        return Colors.blue;
+        return Color(0xff18bde8);
 
       case "success":
-        return Colors.green;
+        return Color(0xff25c33e);
 
       case "fail":
-        return Colors.red;
+        return Color(0xffe40931);
 
       default:
         return Colors.grey.shade700;
@@ -161,7 +161,7 @@ class _ScreenState extends State<Screen> {
                         if (index != steps.length - 1)
                           const Icon(
                             Icons.arrow_downward,
-                            color: Colors.white,
+                            color: Colors.black38,
                           ),
                       ],
                     );
