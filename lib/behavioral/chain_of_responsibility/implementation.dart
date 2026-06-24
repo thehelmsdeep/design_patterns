@@ -284,7 +284,6 @@ class CheckPermissionHandler extends RequestHandler {
 
   @override
   Future<bool> process(RequestContext context) async {
-    // شبیه‌سازی خطا
     return !Random().nextBool();
   }
 }

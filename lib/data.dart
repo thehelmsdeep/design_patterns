@@ -1,88 +1,143 @@
 import 'package:flutter/material.dart';
+
 import 'behavioral/observer/implementation.dart' as observer;
 import 'behavioral/strategy/implementation.dart' as strategy;
 import 'behavioral/chain_of_responsibility/implementation.dart' as chain;
+
 import 'creational/singleton/implementation.dart' as singleton;
-import 'creational/factory/implementation.dart' as appFactory;
+import 'creational/factory/implementation.dart' as ffactory;
 import 'creational/builder/implementation.dart' as builder;
+
 import 'structural/adapter/implementation.dart' as adapter;
 import 'structural/decorator/implementation.dart' as decorator;
 import 'structural/facade/implementation.dart' as facade;
 
-class PatternItem {
+
+
+
+class PatternExample {
   final String name;
   final Widget Function() page;
 
-  PatternItem({required this.name, required this.page});
+  PatternExample({
+    required this.name,
+    required this.page,
+  });
 }
+
+
+
+
+class PatternSubCategory {
+  final String name;
+  final List<PatternExample> items;
+
+  PatternSubCategory({
+    required this.name,
+    required this.items,
+  });
+}
+
+
+
 
 class PatternCategory {
   final String name;
-  final List<PatternItem> items;
+  final List<PatternSubCategory> subCategories;
 
-  PatternCategory({required this.name, required this.items});
+  PatternCategory({
+    required this.name,
+    required this.subCategories,
+  });
 }
+
+
+
+
+
+
 
 final List<PatternCategory> categories = [
   PatternCategory(
     name: "Creational",
-    items: [
-      PatternItem(
+    subCategories: [
+      PatternSubCategory(
         name: "Singleton",
-        page: () =>
-            singleton.Screen(category: 'Behavioral', subCategory: 'Singleton'),
+        items: [
+
+        ],
       ),
-      PatternItem(
+      PatternSubCategory(
         name: "Factory",
-        page: () =>
-            appFactory.Screen(category: 'Behavioral', subCategory: 'Factory'),
+        items: [
+
+        ],
       ),
-      PatternItem(
+      PatternSubCategory(
         name: "Builder",
-        page: () =>
-            builder.Screen(category: 'Behavioral', subCategory: 'Builder'),
+        items: [
+
+        ],
       ),
     ],
   ),
+
   PatternCategory(
     name: "Behavioral",
-    items: [
-      PatternItem(
-        name: "Chain of Responsibility",
-        page: () => chain.Screen(
-          category: 'Behavioral',
-          subCategory: 'Chain of Responsibility',
-        ),
-      ),
-      PatternItem(
+    subCategories: [
+      PatternSubCategory(
         name: "Observer",
-        page: () =>
-            observer.Screen(category: 'Behavioral', subCategory: 'Observer'),
+        items: [
+          PatternExample(
+            name: "Password Strength Checker",
+            page: () => observer.Screen(
+              category: 'Behavioral',
+              subCategory: 'Observer',
+            ),
+          ),
+        ],
       ),
-      PatternItem(
+      PatternSubCategory(
         name: "Strategy",
-        page: () =>
-            strategy.Screen(category: 'Behavioral', subCategory: 'Strategy'),
+        items: [
+
+        ],
+      ),
+      PatternSubCategory(
+        name: "Chain of Responsibility",
+        items: [
+          PatternExample(
+            name: "A request",
+            page: () => chain.Screen(
+              category: 'Behavioral',
+              subCategory: 'Chain',
+            ),
+          ),
+        ],
       ),
     ],
   ),
 
   PatternCategory(
     name: "Structural",
-    items: [
-      PatternItem(
+    subCategories: [
+      PatternSubCategory(
         name: "Adapter",
-        page: () =>
-            adapter.Screen(category: 'Behavioral', subCategory: 'Adapter'),
+        items: [
+
+        ],
       ),
-      PatternItem(
+      PatternSubCategory(
         name: "Decorator",
-        page: () =>
-            decorator.Screen(category: 'Behavioral', subCategory: 'Decorator'),
+        items: [
+
+        ],
       ),
-      PatternItem(
+      PatternSubCategory(
         name: "Facade",
-        page: () => facade.Screen(category: 'Behavioral', subCategory: 'Facade'),
+        items: [
+
+        ],
       ),
     ],
   ),
