@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
 import 'behavioral/observer/implementation.dart' as observer;
-import 'behavioral/strategy/implementation.dart' as strategy;
+//import 'behavioral/strategy/implementation.dart' as strategy;
 import 'behavioral/chain_of_responsibility/implementation.dart' as chain;
-
-import 'creational/singleton/implementation.dart' as singleton;
-import 'creational/factory/implementation.dart' as ffactory;
-import 'creational/builder/implementation.dart' as builder;
-
-import 'structural/adapter/implementation.dart' as adapter;
-import 'structural/decorator/implementation.dart' as decorator;
-import 'structural/facade/implementation.dart' as facade;
+import 'behavioral/observer/implementation_2.dart';
+//
+// import 'creational/singleton/implementation.dart' as singleton;
+// import 'creational/factory/implementation.dart' as ffactory;
+// import 'creational/builder/implementation.dart' as builder;
+//
+// import 'structural/adapter/implementation.dart' as adapter;
+// import 'structural/decorator/implementation.dart' as decorator;
+// import 'structural/facade/implementation.dart' as facade;
 
 
 
@@ -89,12 +90,21 @@ final List<PatternCategory> categories = [
         name: "Observer",
         items: [
           PatternExample(
-            name: "Password Strength Checker",
+            name: "1 listener",
             page: () => observer.Screen(
               category: 'Behavioral',
-              subCategory: 'Observer',
+              subCategory: 'Observer / 1 listener',
             ),
           ),
+
+          PatternExample(
+            name: "more listeners",
+            page: () => OrderPage(
+              category: 'Behavioral',
+              subCategory: 'Observer / more listeners ',
+            ),
+          ),
+
         ],
       ),
       PatternSubCategory(
