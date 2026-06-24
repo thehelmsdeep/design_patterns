@@ -1,17 +1,26 @@
-# design_patterns
+Design Patterns Visual Implementation
 
-A new Flutter project.
+This project offers a visual and interactive exploration of common software design patterns .
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+Project Structure
+
+pattern_name/
+├── pattern.dart
+└── implementation.dart
+
+
+📌 Explanation:
+pattern.dart
+Defines a generic and asynchronous class.
+
+implementation.dart
+Contains a runnable Flutter example demonstrating how the pattern works in practice.
+
+
+
+![App Screenshot](assets/images/chain.png)
