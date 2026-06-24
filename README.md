@@ -6,23 +6,27 @@ This project offers a visual and interactive exploration of common software desi
 
 
 
+<p><strong>Project Structure</strong></p>
 
-Project Structure
-
-```text
+<pre>
 pattern_name/
 ├── pattern.dart
 └── implementation.dart
-```
+</pre>
+
 
 
 Explanation:
+
 pattern.dart
 Defines a generic and asynchronous class.
 
 implementation.dart
-demonstrating how the pattern works in practice.
+demonstrates how the pattern works in practice.
 
 
 
-<img src="assets/images/chain.png" width="350" height="600" />
+
+
+
+<img src="assets/images/chain.png" width="420" height="800" />

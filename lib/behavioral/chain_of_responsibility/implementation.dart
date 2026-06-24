@@ -112,7 +112,7 @@ class _ScreenState extends State<Screen> {
     return Scaffold(
       backgroundColor:  Colors.white,
       appBar: AppBar(
-        title:  Text('${widget.category} / ${widget.subCategory}',style: TextStyle(fontSize: 14),),
+        title:  Text('${widget.category} / ${widget.subCategory}',style: TextStyle(fontSize: 15),),
       ),
       body: Center(
         child: SingleChildScrollView(
@@ -136,21 +136,22 @@ class _ScreenState extends State<Screen> {
                             vertical: 6,
                           ),
                           decoration: BoxDecoration(
-                            color: getColor(step),
+                            color:Colors.grey.shade200,
+                            //color: getColor(step),
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Row(
                             children: [
                               Icon(
                                 getIcon(step),
-                                color: Colors.white,
+                                color: getColor(step),
                               ),
                               const SizedBox(width: 12),
                               Expanded(
                                 child: Text(
                                   step,
-                                  style: const TextStyle(
-                                    color: Colors.white,
+                                  style:  TextStyle(
+                                    color: getColor(step),
                                     fontSize: 14,
                                   ),
                                 ),
