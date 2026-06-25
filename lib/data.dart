@@ -1,17 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'behavioral/observer/implementation.dart' as observer;
-//import 'behavioral/strategy/implementation.dart' as strategy;
-import 'behavioral/chain_of_responsibility/implementation.dart' as chain;
+import 'behavioral/observer/implementation.dart';
+import 'behavioral/chain_of_responsibility/implementation.dart';
 import 'behavioral/observer/implementation_2.dart';
-//
-// import 'creational/singleton/implementation.dart' as singleton;
-// import 'creational/factory/implementation.dart' as ffactory;
-// import 'creational/builder/implementation.dart' as builder;
-//
-// import 'structural/adapter/implementation.dart' as adapter;
-// import 'structural/decorator/implementation.dart' as decorator;
-// import 'structural/facade/implementation.dart' as facade;
 
 
 
@@ -91,7 +81,7 @@ final List<PatternCategory> categories = [
         items: [
           PatternExample(
             name: "1 listener",
-            page: () => observer.Screen(
+            page: () => PasswordStrengthPage(
               category: 'Behavioral',
               subCategory: 'Observer / 1 listener',
             ),
@@ -99,7 +89,7 @@ final List<PatternCategory> categories = [
 
           PatternExample(
             name: "more listeners",
-            page: () => OrderPage(
+            page: () => ObserverDashboard(
               category: 'Behavioral',
               subCategory: 'Observer / more listeners ',
             ),
@@ -118,7 +108,7 @@ final List<PatternCategory> categories = [
         items: [
           PatternExample(
             name: "A request",
-            page: () => chain.Screen(
+            page: () => ChainScreen(
               category: 'Behavioral',
               subCategory: 'Chain',
             ),

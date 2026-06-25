@@ -4,16 +4,16 @@ import 'package:flutter/material.dart';
 
 
 
-class Screen extends StatefulWidget {
+class ChainScreen extends StatefulWidget {
   final String category;
   final String subCategory;
-  const Screen({super.key,required this.category,required this.subCategory});
+  const ChainScreen({super.key,required this.category,required this.subCategory});
 
   @override
-  State<Screen> createState() => _ScreenState();
+  State<ChainScreen> createState() => _ScreenState();
 }
 
-class _ScreenState extends State<Screen> {
+class _ScreenState extends State<ChainScreen> {
 
 
   final List<String> steps = [

@@ -2,17 +2,6 @@ import 'package:design_patterns/behavioral/observer/pattern.dart';
 import 'package:flutter/material.dart';
 
 
-class Screen extends StatelessWidget {
-  final String category;
-  final String subCategory;
-  const Screen({super.key,required this.category,required this.subCategory});
-
-  @override
-  Widget build(BuildContext context) {
-    return  PasswordStrengthPage(category: category,subCategory: subCategory);
-  }
-}
-
 
 
 
@@ -107,10 +96,6 @@ class PasswordController {
 
 
 
-
-/// =====================================
-/// UI
-/// =====================================
 
 
 class ObservableBuilder<T> extends StatefulWidget {
