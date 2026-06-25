@@ -52,24 +52,24 @@ final List<PatternCategory> categories = [
   PatternCategory(
     name: "Creational",
     subCategories: [
-      PatternSubCategory(
-        name: "Singleton",
-        items: [
-
-        ],
-      ),
-      PatternSubCategory(
-        name: "Factory",
-        items: [
-
-        ],
-      ),
-      PatternSubCategory(
-        name: "Builder",
-        items: [
-
-        ],
-      ),
+      // PatternSubCategory(
+      //   name: "Singleton",
+      //   items: [
+      //
+      //   ],
+      // ),
+      // PatternSubCategory(
+      //   name: "Factory",
+      //   items: [
+      //
+      //   ],
+      // ),
+      // PatternSubCategory(
+      //   name: "Builder",
+      //   items: [
+      //
+      //   ],
+      // ),
     ],
   ),
 
@@ -97,12 +97,12 @@ final List<PatternCategory> categories = [
 
         ],
       ),
-      PatternSubCategory(
-        name: "Strategy",
-        items: [
-
-        ],
-      ),
+      // PatternSubCategory(
+      //   name: "Strategy",
+      //   items: [
+      //
+      //   ],
+      // ),
       PatternSubCategory(
         name: "Chain of Responsibility",
         items: [
@@ -121,24 +121,24 @@ final List<PatternCategory> categories = [
   PatternCategory(
     name: "Structural",
     subCategories: [
-      PatternSubCategory(
-        name: "Adapter",
-        items: [
-
-        ],
-      ),
-      PatternSubCategory(
-        name: "Decorator",
-        items: [
-
-        ],
-      ),
-      PatternSubCategory(
-        name: "Facade",
-        items: [
-
-        ],
-      ),
+      // PatternSubCategory(
+      //   name: "Adapter",
+      //   items: [
+      //
+      //   ],
+      // ),
+      // PatternSubCategory(
+      //   name: "Decorator",
+      //   items: [
+      //
+      //   ],
+      // ),
+      // PatternSubCategory(
+      //   name: "Facade",
+      //   items: [
+      //
+      //   ],
+      // ),
     ],
   ),
 ];
